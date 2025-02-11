@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style_sheet/all.min.css">
+    <link rel="stylesheet" href="style_sheet/fontawesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: aqua;
+  opacity:0.8;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: blue;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(140, 180, 226);
+  color: white;
+}
+        a{
+            text-decoration: none;
+        
+        }
+        body{
+            background-image: url(imagEs/photo.jpg);
+            background-size: cover;
+        }
+        .container{
+            width: 500px;
+            background: aqua;
+            opacity: 0.9;
+            box-shadow: rgba(0,0,0,0.7);
+            padding: 50px 0;
+            margin: 5% 37.5% ;
+            padding: 13px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid lightseagreen;
+            border-collapse: collapse;
+            margin-left: auto; 
+            margin-right: auto
+        }
+        #t01 th {
+            background-color:greenyellow;
+            color: white;
+            
+        }
+        #t02 th {
+            background-color:blue;
+            color: white;
+        }
+        #t03 th {
+            background-color:black;
+            color: white;
+        }.sticky-top {
+        position: sticky; 
+        top: 0;    
+        width: 100%;   
+        background-color: #f0f0f0; 
+        padding: 10px;   
+        z-index: 100;
+        box-sizing: border-box;
+      }
+    </style>
+</head>
+<body>
+    <div class ="sticky-top" style="color: blue;background-color: white;font-size: 50px;opacity: 0.9;">
+    House Rental
+    </div>
+    <ul>
+        <li><a class="active" href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="Registration.html"><i class="fas fa-cart-plus"></i> Book Now</a></li>
+        <li><a href="login.php"><i class="fa fa-user"></i>  Admin</a></li>
+      </ul>
+      <br>
+      <div class="container">
+        <h1>House Rental</h1>
+        <p>House Rental company is give you a special offer and affordable houses for rent. 
+          We care about your life by bringing you list of house in diffenent three places as listed below</p>
+          <br>
+          <h2>CLASS A</h2>
+          <p style="justify-content: center;">
+            <table id="t01">
+            <tr>
+              <th>S/N</th>
+              <th>House Number</th> 
+              <th>Price</th>
+              <th>Location</th>
+              <th>Street</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>MS/H101</td>
+              <td>450,000</td>
+              <td>Masaki</td>
+              <td>Bandari Lane</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>MS/H102</td>
+              <td>450,000</td>
+              <td>Masaki</td>
+              <td>Chakechake</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>MS/H103</td>
+              <td>450,000</td>
+              <td>Masaki</td>
+              <td>DYC new ramp</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>MS/H104</td>
+              <td>450,000</td>
+              <td>Masaki</td>
+              <td>Lincoln</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>MS/H105</td>
+              <td>450,000</td>
+              <td>Masaki</td>
+              <td>Pieta Lane</td>
+            </tr>
+           </table>
+           <br>
+
+            <h2>CLASS B</h2>
+            <table id="t02">
+             <tr>
+               <th>S/N</th>
+               <th>House Number</th> 
+               <th>Price</th>
+               <th>Location</th>
+               <th>Street</th>
+             </tr>
+             <tr>
+               <td>1</td>
+               <td>UP/H207</td>
+               <td>450,000</td>
+               <td>Upanga</td>
+               <td>Allykhan</td>
+             </tr>
+             <tr>
+               <td>2</td>
+               <td>UP/H208</td>
+               <td>450,000</td>
+               <td>Upanga</td>
+               <td>Mazengo</td>
+             </tr>
+             <tr>
+               <td>3</td>
+               <td>UP/H209</td>
+               <td>450,000</td>
+               <td>Upanga</td>
+               <td>Mfaume</td>
+             </tr>
+             <tr>
+               <td>4</td>
+               <td>UP/H210</td>
+               <td>450,000</td>
+               <td>Upanga</td>
+               <td>Mindu</td>
+             </tr>
+             <tr>
+               <td>5</td>
+               <td>UP/H211</td>
+               <td>450,000</td>
+               <td>Upanga</td>
+               <td>Olimpiyo</td>
+             </tr>
+          </table>
+          <br>
+            <h2>CLASS C</h2>
+         
+           <table id="t03">
+            <tr>
+              <th>S/N  </th>
+              <th>House Number  </th> 
+              <th>Price  </th>
+              <th>Location  </th>
+              <th>Street  </th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>MG/H320</td>
+              <td>450,000</td>
+              <td>Magomeni</td>
+              <td>Idrisa</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>MG/H321</td>
+              <td>450,000</td>
+              <td>Magomeni</td>
+              <td>Makuti A</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>MG/H322</td>
+              <td>450,000</td>
+              <td>Magomeni</td>
+              <td>Makuti B</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>MG/H323</td>
+              <td>450,000</td>
+              <td>Magomeni</td>
+              <td>Soga</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>MG/H324</td>
+              <td>450,000</td>
+              <td>Magomeni</td>
+              <td>Utengule</td>
+            </tr>
+           </table>
+          </p>
+      </div>
+</body>
+</html>

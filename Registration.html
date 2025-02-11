@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style_sheet/all.min.css">
+    <link rel="stylesheet" href="style_sheet/fontawesome.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: aqua;
+  opacity:0.8;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: blue;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(140, 180, 226);
+  color: white;
+}
+        a{
+            text-decoration: none;
+        
+        } 
+body{
+    background-image: url(imagEs/photo1.jfif);
+    background-size: cover;
+    background-position:center ;
+}
+.container{
+    width: 500px;
+    background: aqua;
+    opacity: 0.9;
+    box-shadow: rgba(0,0,0,0.7);
+    padding: 50px 0;
+    margin: 5% 37.5%;
+    border-radius: 4px;
+
+}
+.form-content{
+    padding-bottom: 5px;
+    margin: 30px auto;
+    padding-top: 10px;
+    width: 80%;
+    border-bottom: 1px solid white;
+    color: white;
+
+}
+::placeholder{
+    color: black;
+    font-size: 16px;
+}
+
+.form-content input{
+    width: 70%;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(27, 27, 27);
+}
+
+
+.logbtn{
+    background: transparent;
+    margin :30px auto 15px;
+    width: 80%;
+    display: block;
+    border: 1px solid white;
+    color: blue;
+    cursor: pointer;
+    font-size: 18px;
+}
+.sticky-top {
+        position: sticky; 
+        top: 0;    
+        width: 100%;   
+        background-color: #f0f0f0; 
+        padding: 10px;   
+        z-index: 100;
+        box-sizing: border-box;
+      }
+
+</style>
+<body>
+    <div class ="sticky-top" style="color: blue;background-color: white;font-size: 50px;opacity: 0.9;">
+    House Rental
+    </div>
+    <ul>
+        <li><a  href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a class="active" href="Registration.html"><i class="fas fa-cart-plus"></i> Book Now</a></li>
+        <li><a href="login.php"><i class="fa fa-user"></i> Admin</a></li>
+      </ul>
+      <br>
+    <div class="container" >
+        <h1>Book Here!</h1>
+        <form action="action.php" method="post">
+            <div style="color: black; font-size:x-large;"><marquee behavior="scroll" direction="left">Dear tenant you are warmly welcome......Please Book your favorite house </marquee></div>
+            <div  class="form-content">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Name of tenant" autocomplete="off" name="nameOfTenant" required/>
+            </div>
+            <div  class="form-content">
+                <i class="fa fa-home"></i>
+                <input  list="houseNumber" placeholder="House Number" autocomplete="off" name="houseNumber" oninput="conv()" required/>
+                <datalist id="houseNumber">
+                    <option value="MS/H1O1">
+                    <option value="MS/H1O2">
+                    <option value="MS/H1O3">
+                    <option value="MS/H1O4">
+                    <option value="MS/H1O5">
+                    <option value="UP/H207">
+                    <option value="UP/H208">
+                    <option value="UP/H209">
+                    <option value="UP/H210">
+                    <option value="UP/H211">
+                    <option value="MG/H320">
+                    <option value="MG/H321">
+                    <option value="MG/H322">
+                    <option value="MG/H323">
+                    <option value="MG/H324">
+                  </datalist>              
+            </div>
+            <div  class="form-content">
+                <i class="fa fa-money-bill-wave"></i>
+                <input  type="text" placeholder="Amount Paid" autocomplete="off" name="amountPayed" id='Amount Paid' required/>              
+            </div>
+            <button class="logbtn" name="register" >  <i class="fas fa-cart-plus"></i> BOOK NOW</button>
+        </form>
+    </div>
+   <script>
+       function conv(){
+        var x = document.getElementById('houseNumber').value;
+           
+           var y = document.getElementById('Amount Paid');
+           var m = 450000;
+           document.getElementById('Amount Paid').value=m;
+        }
+       
+   </script>
+</body>
+</html>
